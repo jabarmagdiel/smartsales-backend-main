@@ -1,7 +1,8 @@
-gunicorn
-django
+Django==5.0.7
 djangorestframework
 djangorestframework-simplejwt
 channels
 psycopg2-binary
 reportlab
+gunicorn
+whitenoise
