@@ -94,11 +94,11 @@ ASGI_APPLICATION = 'backend_salessmart.asgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME', 'smartsales_db'),
-        'USER': os.getenv('DB_USER', 'postgres'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'kellyduran2210'),
-        'HOST': os.getenv('DB_HOST', 'localhost'),
-        'PORT': os.getenv('DB_PORT', '5432'),
+        'NAME': 'smartsales_db',
+        'USER': 'postgres',
+        'PASSWORD': 'KellyDuran2210*',  # tu contraseña real
+        'HOST': '34.38.132.155',        # tu IP pública
+        'PORT': '5432',
     }
 }
 
