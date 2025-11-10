@@ -94,14 +94,13 @@ ASGI_APPLICATION = 'backend_salessmart.asgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'smartsales_db',         # Debe ser el nombre de tu BD externa
-        'USER': 'postgres',             # O el usuario que uses
-        'PASSWORD': 'kellyduran2210', # Tu contraseña de la BD
-        'HOST': 'localhost',            # Si el servidor está en tu máquina
-        'PORT': '5432',                 # Puerto por defecto de PostgreSQL
+        'NAME': os.getenv('DB_NAME', 'smartsales_db'),
+        'USER': os.getenv('DB_USER', 'postgres'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'kellyduran2210'),
+        'HOST': os.getenv('DB_HOST', 'localhost'),
+        'PORT': os.getenv('DB_PORT', '5432'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
