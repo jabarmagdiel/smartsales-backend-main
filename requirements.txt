@@ -9,3 +9,4 @@ whitenoise
 joblib
 pandas
 openpyxl
+scikit-learn
