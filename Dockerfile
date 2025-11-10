@@ -19,4 +19,4 @@ COPY . /app/
 EXPOSE 8080
 
 # Comando para ejecutar el servidor Django
-CMD ["gunicorn", "backend_salesmart.wsgi:application", "--bind", "0.0.0.0:8080"]
+CMD ["gunicorn", "backend_salessmart.wsgi:application", "--bind", "0.0.0.0:8080"]
